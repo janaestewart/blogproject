@@ -1,0 +1,165 @@
+body{
+    background-color: yellow;
+    font-family: "Oswald", sans-serif;
+}
+
+.container {
+    /* grid display */
+    display: grid;
+    width: 100%;
+    margin: auto;
+    /* margin-top: 150px; */
+
+    /* set rows and columns */
+    grid-template-columns: 100%;
+    grid-template-rows: 15vh 30vh 100vh 13vh;
+    grid-template-areas: 
+    "hd"
+    "sd"  
+    "main"
+    "ft" ;
+}
+
+.box{
+    border: 1px solid rebeccapurple;
+    background-color: cornflowerblue;
+}
+
+.header {
+    grid-area: hd;
+    padding: 0 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: right;
+}
+
+.footer {
+    grid-area: ft;
+}
+
+.sidebar {
+    grid-area: sd;
+}
+
+.content {
+    grid-area: main;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+h1 {
+    border: 2px solid blue;
+    margin: auto;
+    font-size: 35px;
+}
+
+
+.blogPost{
+    display: block;
+    border: 2px solid red;
+}
+
+h3 {
+    border: 2px solid blue;
+}
+
+section { 
+    width: 80%;
+    margin: auto;
+}
+
+.contentPost {
+    border: red solid 2px;
+    width: 45%;
+    margin: 10px 12px;
+    text-align: center;
+    background: rgba( 255, 255, 255, 0.35 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.picCont {
+    border: 2px solid yellow;
+    width: 50%;
+    height: 100px;
+    background-size: cover;
+    position: relative;
+    margin: auto;
+}
+
+.picOne {
+    background-image: url("imgs/spanks3.jpeg");
+    background-position: center;
+}
+
+.picTwo {
+    background-image: url("imgs/spanks2.jpeg");
+    background-position: center;
+}
+
+.picThree {
+    background-image: url("imgs/spanks1.jpeg");
+    background-position: center;
+}
+
+.picFour {
+    background-image: url("imgs/spanks.jpeg");
+    background-position: center;
+}
+
+
+button {
+    background-color: transparent;
+    border: black solid 1px;
+    border-radius: 10px;
+}
+
+img {
+    display: none;
+}
+
+.footerCont {
+    text-align: center;
+}
+
+@media(min-width:900px){
+    .container{
+        display: grid;
+        width: 100%;
+        margin: auto;
+        /* margin-top: 150px; */
+    
+        /* set rows and columns */
+        grid-template-columns: 15vh 35vh;
+        grid-template-rows: 13vh 90vh 13vh;
+        grid-template-areas: 
+        "hd hd hd hd hd hd hd"
+        "sd sd main main main main main"
+        "ft ft ft ft ft ft ft" ;
+    }
+
+    .content {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .contentPost {
+        border: red solid 2px;
+        width: 45%;
+    }
+}
+
+@media (min-width: 600px) and (max-width:900px) {
+    .container {
+      
+    }
+  }
