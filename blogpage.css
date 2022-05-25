@@ -121,7 +121,7 @@ img {
         margin-top: 150px;
     
         /* set rows and columns */
-        grid-template-columns: 15vh 35vh;
+        grid-template-columns: 5vh 35vh;
         grid-template-rows: 6% 90% 5%;
         grid-template-areas: 
         "hd hd hd hd hd hd hd"
@@ -141,7 +141,7 @@ img {
     h1 {
         border: 2px solid blue;
         margin: auto;
-        font-size: 35px;
+        font-size: 45px;
     }
     
 }
