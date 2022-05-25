@@ -12,7 +12,7 @@ body{
 
     /* set rows and columns */
     grid-template-columns: 100%;
-    grid-template-rows: 6% 10% 73% 6%;
+    grid-template-rows: 6% 18% 83% 6%;
     grid-template-areas: 
     "hd"
     "sd"  
@@ -56,7 +56,7 @@ a {
 h1 {
     border: 2px solid blue;
     margin: auto;
-    font-size: 35px;
+    font-size: 25px;
 }
 
 
@@ -87,34 +87,7 @@ section {
     border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 
-.picCont {
-    border: 2px solid yellow;
-    width: 50%;
-    height: 100px;
-    background-size: cover;
-    position: relative;
-    margin: auto;
-}
 
-.picOne {
-    background-image: url("imgs/spanks3.jpeg");
-    background-position: center;
-}
-
-.picTwo {
-    background-image: url("imgs/spanks2.jpeg");
-    background-position: center;
-}
-
-.picThree {
-    background-image: url("imgs/spanks1.jpeg");
-    background-position: center;
-}
-
-.picFour {
-    background-image: url("imgs/spanks.jpeg");
-    background-position: center;
-}
 
 
 button {
@@ -123,8 +96,17 @@ button {
     border-radius: 10px;
 }
 
+
+
+.picHold {
+    width: 100%;
+    /* border: 2px solid seagreen; */
+}
+
 img {
-    display: none;
+    width: 100%;
+    height: 400px;
+    object-fit: contain;
 }
 
 .footerCont {
@@ -136,11 +118,11 @@ img {
         display: grid;
         width: 100%;
         margin: auto;
-        /* margin-top: 150px; */
+        margin-top: 150px;
     
         /* set rows and columns */
-        grid-template-columns: 10vh 35vh;
-        grid-template-rows: 6% 98% 6%;
+        grid-template-columns: 15vh 35vh;
+        grid-template-rows: 6% 90% 5%;
         grid-template-areas: 
         "hd hd hd hd hd hd hd"
         "sd sd main main main main main"
@@ -154,8 +136,14 @@ img {
 
     .contentPost {
         border: red solid 2px;
-        width: 45%;
+        width: 45%; 
+    } */
+    h1 {
+        border: 2px solid blue;
+        margin: auto;
+        font-size: 35px;
     }
+    
 }
 
 @media (min-width: 600px) and (max-width:900px) {
